@@ -1,0 +1,35 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="tailwind.css">
+<!--        script defer asyns 를 알고 갈 것-->
+        <script defer src="vanilla.js"></script>
+    </head>
+    <body>
+        <div class="m-4">
+            <div>
+                <button class="w-40 p-4 bg-gray-200 hover:bg-gray-300 rounded shadow" id="addBtn">Add</button>
+                <button class="w-40 p-4 bg-gray-200 hover:bg-gray-300 rounded shadow" id="submitBtn">Submit</button>
+            </div>
+
+            <ul class="mt-10" id="ul">
+                <form>
+                    <li class="flex gap-8">
+    <!--                    인풋을 라벨로 감싸면 for처럼 사용가능-->
+
+                        <label>
+                            이름 : <input type="text" name="name" class="border border-gray-600 rounded">
+                        </label>
+                        <div>
+                            <label>여 <input type="radio" name="sex" value="F"></label>
+                            <label>남 <input type="radio" name="sex" value="M"></label>
+                        </div>
+                        <button class="removeBtn w-32 p-2 bg-gray-200 text-sm hover:bg-gray-300 rounded shadow" >Remove</button>
+                    </li>
+                </form>
+            </ul>
+        </div>
+    </body>
+</html>
